@@ -2,7 +2,7 @@
 
 Name:		%{name}
 Version:	0.1.alpha
-Release:	2
+Release:	3
 License:	GPLv3
 Summary:	Syncany is an open-source file synchronization and filesharing application
 Group:		Archiving/Backup
@@ -67,9 +67,10 @@ Documentation for Syncany
 Summary:	Syncany Nautilus extension
 
 %description nautilus
-
+Synany extension for Nautilus file browser.
 
 %files nautilus
+%{_libdir}/nautilus/
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -114,3 +115,6 @@ popd
 %{__ln_s} %{buildroot}%{_datadir}/%{name}/res/logo64.png %{buildroot}%{_datadir}/pixmaps/%{name}.png
 
 # Installing Nautilus extension
+pushd nautilus-syncany
+	%{__install} -m0755 -D dist/*/GNU-Linux-*/libnautilus-syncany.so %{buildroot}%{_libdir}/nautilus/extensions-2.0/libnautilus-syncany.so
+popd
