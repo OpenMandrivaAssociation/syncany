@@ -20,7 +20,7 @@ Suggests:	%{name}-doc
 BuildRequires:	ant
 BuildRequires:	ant-apache-regexp
 BuildRequires:	ant-nodeps
-BuildRequires:	java-1.6.0-sun-devel
+BuildRequires:	jdk
 # BuildRequires for Syncany Nautilus extension
 BuildRequires:	gtk2-devel
 BuildRequires:	atk-devel
