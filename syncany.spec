@@ -75,6 +75,7 @@ Summary:	Syncany Nautilus extension
 %setup -q -n %{name}-%{version}
 %apply_patches
 
+%ifarch x86_64
 pushd nautilus-syncany
 for f in nbproject/{configurations.xml,Makefile-Debug.mk}; do
 sed -ri \
@@ -83,6 +84,7 @@ sed -ri \
 	$f
 done;
 popd
+%endif
 
 %build
 
