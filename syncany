@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+/usr/share/syncany/bin/syncany.sh

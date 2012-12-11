@@ -118,3 +118,17 @@ popd
 pushd nautilus-syncany
 	%{__install} -m0755 -D dist/*/GNU-Linux-*/libnautilus-syncany.so %{buildroot}%{_libdir}/nautilus/extensions-2.0/libnautilus-syncany.so
 popd
+
+
+%changelog
+* Sat Aug 20 2011 Alexandre Lissy <alissy@mandriva.com> 0.1.alpha-3
++ Revision: 695903
+- Add missing Description for nautilus subpackage
+  Add missing install and packaging of nautilus extension
+- Release bump
+- Fix build on 32 bits machines
+- Using java-devel as BuildRequires instead of jdk
+- Changing BuildRequires for Java to jdk
+- Importing Syncany, inspired by Mariodebian's package ...
+- Created package structure for 'syncany'.
+

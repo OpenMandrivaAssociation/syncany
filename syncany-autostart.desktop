@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Syncany
+Comment=Syncany start with user session if configured
+Comment[es]=Autoiniciar Syncany con la sesión de usuario si esta configurado
+Icon=syncany.png
+Exec=/usr/bin/syncany-autostart
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Network;
+X-GNOME-Autostart-Delay=30
+

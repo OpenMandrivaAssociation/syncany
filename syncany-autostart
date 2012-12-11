@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Start syncany if configured
+#
+if [ -d $HOME/.syncany ]; then
+  /usr/share/syncany/bin/syncany.sh
+else
+  echo "Syncany not configured, no autostart"
+fi
+
+

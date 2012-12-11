@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Syncany
+Comment=Syncany
+Exec=/usr/bin/syncany
+Icon=/usr/share/pixmaps/syncany.png
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Network;
+StartupNotify=true
