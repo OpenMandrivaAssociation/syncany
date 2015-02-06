@@ -2,7 +2,7 @@
 
 Name:		%{name}
 Version:	0.1.alpha
-Release:	3
+Release:	4
 License:	GPLv3
 Summary:	Syncany is an open-source file synchronization and filesharing application
 Group:		Archiving/Backup
