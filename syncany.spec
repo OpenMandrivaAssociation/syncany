@@ -74,7 +74,7 @@ Synany extension for Nautilus file browser.
 
 %prep
 %setup -q -n %{name}-%{version}
-%apply_patches
+%autopatch -p1
 
 %ifarch x86_64
 pushd nautilus-syncany
